@@ -63,6 +63,7 @@ namespace Rcpp {
             case LGLSXP:
             case CPLXSXP:
             case INTSXP:
+            case NILSXP:
                 return Rf_coerceVector(x, RTYPE);
             default:
                 const char* fmt = "Not compatible with requested type: "
